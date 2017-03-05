@@ -45,7 +45,7 @@
         border-radius: 10px;
         background: #FEA500;
     }
-    @media all and (max-width:768px){
+    @media screen and (max-width:768px){
     .contain{
         width:100vw;
         height:100vw;
