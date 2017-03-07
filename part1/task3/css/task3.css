@@ -63,8 +63,8 @@ body,html{
 		line-height: 8.43vw;/*640px 54px*/
     }
 }
- @media only screen and (max-width:425px){
- 	.mainbody .briefintro span{
-		font-size: 20px;
+ @media only screen and (max-width:320px){
+ 	.entrance p,.mainbody .briefintro span{
+		font-size: 14px;
     }	
  }
