@@ -56,7 +56,7 @@ header a:visited {
 
 .loginForm input{
 	margin-left: 1rem;
-	padding-left:0.875rem;
+	padding:0.5rem 0px 0.5rem 0.875rem;
 	box-sizing: border-box; 
 	width: 80%;
 	height: 1.3rem;
