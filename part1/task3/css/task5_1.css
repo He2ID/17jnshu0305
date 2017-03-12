@@ -173,3 +173,11 @@ footer .call{
 .detail ul{
 	padding-bottom: 5rem;
 }
+ @media only screen and (min-width:640px){
+	footer .message{
+		width: 30%;
+	}
+	footer .call{
+		width: 30%;		
+	}
+}
