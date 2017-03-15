@@ -1,0 +1,153 @@
+html,body { 
+	font-size: 20px;
+	font-family:sans-serif;
+}
+body{
+	padding-top: 60px; 
+	padding-bottom: 60px;
+}
+.footer .btn:focus ,.fixhead .btn:focus{ 
+	outline: none; 
+} 
+/*固定页眉*/
+.fixhead{
+	background-color: #5fc0cd;
+	padding: 0.5rem;
+	width: 100%;
+}
+.fixhead .map{
+	margin-top: -1.5rem;
+	width: 1rem;
+	height: 1rem;
+}
+.fixhead .map img{
+	width: 100%;
+}
+.fixhead >.btn-group{
+	width: 50%;
+	height: 2rem;
+	margin: 0 auto;
+}
+.fixhead .btn{
+	background:#55a8b3;
+	color: #fff;
+	border: none;
+	margin: 0px;
+}
+
+.fixhead .active{
+	background: #fff;
+	color: #5fc0cd;
+}
+/*下拉栏*/
+.choose button{
+	border-radius: 0;
+	border:none;
+	border-left: 1px solid #afbac0;
+	border-bottom: 1px solid #afbac0;
+	height: 2rem;
+	color: #afbac0;
+}
+.choose .dropdown-menu{
+	min-width:100%; 
+}
+.choose .dropdown-menu li{
+	width:100%; 
+}
+/*正文表格*/
+.row{
+	border-bottom: 1px solid #afbac0;
+	padding: 0.5rem;
+	font-size: 16px;
+}
+.nopadding{
+	padding: 0px;
+}
+.mainform .date p{
+	overflow: hidden;  /*溢出隐藏*/
+    text-overflow: ellipsis; /*以省略号...显示*/
+    white-space: nowrap;  /*强制不换行*/
+}
+.mainform .txt1{
+	font-size: 14px;
+	color: #999;
+}
+.mainform .txt1 span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("../img/formicon.png") 0 0 no-repeat;
+	background-size: cover;
+	margin-right: 0.375rem;
+}
+.mainform .txt3 span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("../img/formicon.png") 0 -13px no-repeat;
+	background-size: cover;
+	margin-right: 0.375rem;
+}
+.mainform .txt2{
+	font-size: 14px;
+	margin-left: 1rem;
+}
+.mainform .txt3{
+	font-size: 12px;
+	color: #999;
+}
+.mainform .txt4{
+	font-size: 15px;
+	color: #e63b0e;
+	line-height: 57px;
+	text-align: right;
+}
+.mainform .txt4 span{
+	color: #5fc0cd;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*页脚*/
+.footer > .container{
+	width: 100%;
+}
+.footer .btn{
+	font-size: 12px;
+	line-height: 24px;
+	background-color: #f8fafb;
+	border: none;
+}
+
+.footer .btn img{
+	height: 1.2rem;
+	width: 1.2rem;
+	margin: 0 auto;
+}
+.footer .firstpagebtn{
+	color: #5fc0cd;
+}
+.footer .write p{
+	height: 2.4rem;
+	width: 2.4rem;
+	border-radius:1.2rem;
+	background-color:#5fc0cd;
+	margin: 0 auto;
+}
+.footer .write p:before{
+	display: block;
+	content: " ";
+	height: 1rem;
+	width: 1rem;
+	background:url("../img/write.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	position:absolute;
+	top:50%;left:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+.footer .mybtn{
+	color: #999;
+}
+
