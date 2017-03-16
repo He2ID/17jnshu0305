@@ -29,13 +29,14 @@ body{
 	margin: 0 auto;
 }
 .fixhead .btn{
-	background:#55a8b3;
-	color: #fff;
 	border: none;
 	margin: 0px;
 }
-
-.fixhead .active{
+.fixhead .patient{
+	background:#55a8b3;
+	color: #fff;	
+}
+.fixhead .nurse{
 	background: #fff;
 	color: #5fc0cd;
 }
