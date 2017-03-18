@@ -11,6 +11,9 @@ a{
 	text-decoration: none;
 	display: block;
 }
+a:hover{
+	text-decoration: none;
+}
 img{
 	border: none;
 	display: block;
