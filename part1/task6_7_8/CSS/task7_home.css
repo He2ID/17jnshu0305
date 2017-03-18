@@ -94,12 +94,12 @@ body {
 	opacity:1;
 }
 .carousel-control span:first-child{
-	position: relative;
+	/*position: relative;
     	top: 50%;
+	transform: translateY(-50%); 华为机显示不正确*/
     	right: 0px;
    	display: block;
-    	margin-top: -0.75rem;
-    	/*transform: translateY(-50%);*/
+    	margin-top: 9.25rem;
 	color: #fbb435;
 	font-size: 0.75rem;    	
 	opacity:1;
