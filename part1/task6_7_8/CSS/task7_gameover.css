@@ -119,6 +119,21 @@ footer input:first-child{
 footer input:last-child{
 	background: #fbb435;
 }
+@media screen and (min-width: 768px){
+	html,body { 
+		font-size: 20px;
+	}
+	.upcontainer{
+		width: 60%;
+		margin: 0 auto;
+	}
+	footer{
+	justify-content: space-around;
+	}
+	footer input{
+	width:30%;
+	}
+}
 
 
 
