@@ -25,3 +25,6 @@ img{
 	visibility: hidden;
 	height: 0;
 }
+*:focus { 
+	outline: none; 
+} 
