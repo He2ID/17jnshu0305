@@ -1,0 +1,102 @@
+body,html{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 32px;
+	background-color: #68CDD5;	
+	color: #fff;
+	overflow: hidden;
+}
+
+.mainbody .blacktab{
+	height: 2rem;
+	width: 100%;
+	background-color: #000;
+	margin-bottom: 0.3125rem;
+}
+.mainbody .backicon{
+	margin-left: 17.5px;
+	width: 0.844rem;
+	height: 0.844rem;
+	background:url("../img/back.png");
+	background-size: cover;	
+}
+.mainbody .logo{
+	margin:0.66rem auto 0px;
+	width: 2.84375rem;
+	height: 1.09375rem;
+}
+.mainbody .logo img{
+	max-width: 100%;
+}
+.mainbody .briefintro{
+	margin: 1.4rem auto 2.66rem;
+	width: 72%;
+}
+.mainbody .briefintro p{ 
+	line-height: 0.844rem;
+	font-size: 0.468rem;
+	text-align:justify;
+}
+.mainbody .entrance{
+	margin:0px auto 3.125rem;
+	width: 60%;
+	height: 2.1rem;
+	min-width: 4.2rem;
+}
+.entrance p{
+	line-height:0.875rem;
+	font-size: 12px;
+	text-align:center;
+}
+.left,.right{
+	height:2.1rem;
+	width: 2.1rem;
+}
+.entrance .leftpic,.entrance .rightpic{
+	margin: 0px auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
+.leftpic{
+	height:1.32rem;
+	width: 1.32rem;
+	background:url("../img/left1.png");
+	background-size:100%;	
+}
+.rightpic{
+	height:1.32rem;
+	width: 1.32rem;
+	background:url("../img/right1.png");
+	background-size:cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2){
+.mainbody .logo{
+	background:url("../img/logo.png");
+	background-size:cover;
+}
+.leftpic{
+	background:url("../img/left.png");
+	background-size:cover;
+}
+.rightpic{
+	background:url("../img/right.png");
+	background-size:cover;
+}
+}
+@media only screen and (min-width:414px) {
+.mainbody .briefintro{
+	margin: 3rem auto 5rem;
+}
+.mainbody .blacktab{
+	display: none;
+}
+.mainbody{
+	padding-top:0.3125rem;
+}
+}
