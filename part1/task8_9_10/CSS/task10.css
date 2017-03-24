@@ -1,0 +1,439 @@
+html,body { 
+	font-family:Microsoft Yahei;
+	font-size: 20px;
+	background-color: #f9f9f9;
+}
+@media screen and (max-width: 768px){
+	html,body { 
+	font-size: 12px;
+	}
+	.inmiddle{
+		width: 100%;
+		box-sizing: border-box;
+		padding:0 0.75rem;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+	html,body { 
+	font-size: 16px;
+	}
+	.inmiddle{
+		width: 90%;
+		box-sizing: border-box;
+		padding:0 0.75rem;		
+	}
+}
+@media screen and (min-width: 993px) and (max-width: 1200px){
+	html,body { 
+	font-size: 16px;
+	}
+	.inmiddle{
+		width: 80%;
+		box-sizing: border-box;
+		padding:0 0.75rem;		
+	}
+}
+@media screen and (min-width: 1201px){
+	.inmiddle{
+		width: 1170px;
+		box-sizing: border-box;
+		padding:0 0.75rem;			
+	}
+}
+/*页眉*/
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #1d7ad9;
+	box-sizing: border-box;
+}
+header>.inmiddle{
+	margin: 0 auto;
+}
+header .login{
+	float: right;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+header .login>a{
+	display: inline-block;
+	width: 2.8rem;
+	height:40px; 
+	font-size: 0.8rem;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+header .login>.active{
+	width: 5.2rem;
+	background-color: #fff;
+	border-left: 1px solid #fff;
+	color: #000;
+}
+header .hotline{
+	color: #fff;
+	font-size: 0.7rem;
+	line-height: 40px;
+}
+/*导航*/
+nav{
+	width: 100%;
+}
+nav>.inmiddle{
+	margin: 1.5rem auto;
+}
+nav .inmiddle>div{
+	float: right;
+}
+nav .inmiddle>div>a{
+	display: inline-block;
+	height: 1rem;
+	padding: 0.5rem 1rem;
+	margin-left: 2.8rem;
+	background-color: #fff;
+	box-shadow: 1px 1px 3px #ccc;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	color: #000;
+	text-align: center;
+}
+nav .inmiddle>div:hover>.active{
+	color: #000;
+	background-color: #fff;
+}
+nav .inmiddle>div>a:hover,
+nav .inmiddle>div> .active:hover{
+	background: #1d7ad9;
+	color: #fff;	
+}
+@media screen and (max-width: 414px){
+	nav .inmiddle>div>a{
+		margin-left:0.6rem;
+	}
+}
+nav .inmiddle>div>a:first-child{
+	margin-left: 0;
+}
+nav  .inmiddle .active{
+	background: #1d7ad9;
+	color: #fff;	
+}
+/*页脚*/
+.mainfooter{
+	width: 100%;
+	color: #999;
+}
+.mainfooter>.inmiddle{
+	margin: 2.8rem auto;
+}
+.mainfooter .col1{
+	display: inline-block;
+	width: 33.33%;
+	vertical-align: top;
+	font-size: 1rem;
+	line-height:2rem;
+}
+.mainfooter .col2{
+	display: inline-block;
+	width: 33.33%;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.mainfooter .col2>div{
+	width: 15.75rem;
+	margin: 0 auto;
+}
+.mainfooter .col2 a{
+	float: left;
+	font-size: 0.8rem;
+	padding: 0 1rem;
+	line-height: 2rem;
+	color: #999;
+	text-align: left;
+}
+.mainfooter .col2 a:hover{
+	color: #1d7ad9;
+}
+.mainfooter .col3{
+	display: inline-block;
+	width: 33.33%;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.mainfooter .col3>img{
+	width: 4.7rem;
+	float: right;
+	margin-left: 0.7rem;
+}
+.mainfooter .col3>.contact{
+	float: right;
+	text-align: left;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.mainfooter .col2>div{
+		width: 11rem;
+	}
+}
+@media screen and (max-width: 768px){
+	.mainfooter .col1{
+		width: 100%;
+		padding-left: 1rem;
+		box-sizing: border-box;
+	}
+	.mainfooter .col2{
+		width: 40%;
+	}	
+	.mainfooter .col2>div{
+		width: 100%;
+	}
+	.mainfooter .col3{
+		width: 60%;
+		min-width: 190px;
+	}
+}
+@media screen and (max-width: 414px){
+	.mainfooter .col1{
+		width: 100%
+	}
+	.mainfooter .col2{
+		width: 72px;
+		float: left;
+	}
+	.mainfooter .col3{
+		width: 190px;
+		float: right;
+	}
+	.mainfooter .col2>div{
+		width: 100%;
+	}
+}
+footer{
+	width: 100%;
+	background-color: #1d7ad9;
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	line-height: 40px;
+}
+/*主要内容*/
+.mainform{
+	width: 100%;
+	background:#fff;
+	border: 1px solid #f9f9f9;
+	box-sizing: border-box;
+}
+.mainform>.inmiddle{
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+.mainform>.inmiddle>.progressbar{
+	float: right;
+	/*width: 60%;*/
+	height: 4rem;
+}
+.progressbar .progressbox{
+	display: inline-block;
+	width: 25%;
+	padding:0.5rem 0;
+	box-sizing:border-box;
+}
+.progressbox .bar{
+	position: relative;
+	width: 100%;
+	height: 0.3rem;
+	margin: 0.5rem 0;
+	background-color: #ccc;
+}
+.active .bar{
+	background-color: #ff7f02;
+}
+.progressbox .bar:after{
+	position: relative;
+	top: -0.62rem;
+	display: block;
+	margin: 0 auto;
+	width: 1.3rem;
+	height: 1.3rem;
+	border-radius: 1.3rem;
+	background-color: #ccc;
+	color: #fff;
+	text-align: center;
+}
+.active .bar:after{
+	background-color: #ff7f02;
+}
+.progressbox .bar1:after{
+	content: "1";
+}
+.progressbox .bar2:after{
+	content: "2";
+}
+.progressbox .bar3:after{
+	content: "3";
+}
+.progressbox .bar4:after{
+	content: "4";
+}
+
+.progressbox>p{
+	padding:0 1.5rem;
+	color: #ccc;
+	font-size: 0.9rem;
+	text-align: center;
+}
+.active p{
+	color: #ff7f02;
+}
+
+.mainform>.inmiddle>h3{
+	margin: 7.2rem 0 0.2rem 0;/*7.2rem*/
+	border-left: 4px solid #1d7ad9;
+	padding-left: 0.5rem;
+	line-height:1.1rem;
+	font-size: 1.1rem;
+	font-weight: normal;
+}
+
+.mainform>.inmiddle>form>h4{
+	width: 100%;
+	box-sizing: border-box;
+	color: #1d7ad9;
+	font-size: 1rem;
+	line-height: 1rem;
+	padding:0.9rem 0 0.9rem 0.75rem;
+	background-color: #f3f3f3;
+}
+form>h4:before{
+	display: inline-block;
+	vertical-align: top;
+	content: " ";
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	margin-right: 0.25rem;
+	line-height: 2.8rem;
+	background: url("../img/task10_icon.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+form>.form1:before{
+	background-position: 0 0;
+}
+form>.form2:before{
+	background-position: 0 50%;
+}
+form>.form3:before{
+	background-position: 0 100%;
+}
+/*表单正文*/
+.mainform>.inmiddle>form> .choosebox{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1.2rem 1rem 1.2rem 2rem;
+	background-color: #fbfcff;
+}
+form> .choosebox .leftbox{
+	margin-right: 7rem;
+}
+.choosebox .leftbox .radiobox{
+	float: left;
+}
+.choosebox span{
+	margin: 0 2.5rem 0 0.8rem;
+	line-height: 2rem;
+	font-size: 0.9rem;
+	color: #999;
+}
+@media screen and (max-width: 992px){
+	.choosebox span{
+		margin: 0 1.5rem 0 0.5rem;
+	}
+}
+.choosebox input[type=radio]:after{
+    content: " ";
+    display: block;
+    border:2px solid #999;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #fff;
+    position:relative;
+    top: -2px;
+    left: -2px;
+}
+.choosebox input[type=radio]:checked:after{
+    content: " ";
+    display: block;
+    border:4px solid #1d7ad9;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #fff;
+    position:relative;
+    top: -2px;
+    left: -2px;
+}
+.choosebox input[type=num]{
+	width: 3.5rem;
+	height: 1.5rem;
+}
+.choosebox label{
+	margin: 0 0.5rem 0 0;
+	line-height: 2rem;
+	font-size: 0.9rem;
+	color: #999;
+}
+.choosebox>select{
+	float: right;
+	border: 1px #e8e8e8 solid;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	background: url("../img/select.jpg") no-repeat 5rem center transparent;
+	width: 6.5rem;
+	height: 2rem;
+	padding: 0 0.5rem 0 1rem;/* 0.5rem 0 1rem;*/
+	box-sizing: border-box;
+	text-align: center; 
+	font-size: 0.7rem;
+	color: #999;
+}
+select::-ms-expand { display: none; }
+/*select:after{
+	position: relative;
+	display:block;
+	content:"guohl";
+	width: 6rem;
+	height:7rem;
+	background-color: #1d7ad9;
+}*/
+
+.inmiddle>input[type=submit]{
+	display: block;
+	margin: 7rem auto;
+	width: 9rem;
+	height: 2.3rem;
+	border-radius: 5px;
+	border: none;
+	font-size: 1rem;
+	line-height: 2.3rem;
+	color: #fff;
+	background-color: #e15053;
+}
+.inmiddle>input[type=submit]:focus{
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
