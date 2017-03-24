@@ -395,13 +395,19 @@ form> .choosebox .leftbox{
 	background: url("../img/select.jpg") no-repeat 5rem center transparent;
 	width: 6.5rem;
 	height: 2rem;
-	padding: 0 0.5rem 0 1rem;/* 0.5rem 0 1rem;*/
+	padding-left:0.5rem;/* 0.5rem 0 1rem;*/
 	box-sizing: border-box;
 	text-align: center; 
 	font-size: 0.7rem;
 	color: #999;
 }
 select::-ms-expand { display: none; }
+@media screen and (max-width: 768px){
+		.choosebox>select{
+		width: 7rem;	
+		padding-right: 2rem;	
+		}
+}
 /*select:after{
 	position: relative;
 	display:block;
