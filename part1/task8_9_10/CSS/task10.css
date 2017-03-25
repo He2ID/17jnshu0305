@@ -296,7 +296,7 @@ footer{
 	font-weight: normal;
 }
 
-.mainform>.inmiddle>form>h4{
+.mainform>.inmiddle>form h4{
 	width: 100%;
 	box-sizing: border-box;
 	color: #1d7ad9;
@@ -305,7 +305,7 @@ footer{
 	padding:0.9rem 0 0.9rem 0.75rem;
 	background-color: #f3f3f3;
 }
-form>h4:before{
+form h4:before{
 	display: inline-block;
 	vertical-align: top;
 	content: " ";
@@ -318,26 +318,27 @@ form>h4:before{
 	-webkit-background-size: 100%;
 	background-size: 100%;
 }
-form>.form1:before{
+form .form1>h4:before{
 	background-position: 0 0;
 }
-form>.form2:before{
+form .form2>h4:before{
 	background-position: 0 50%;
 }
-form>.form3:before{
+form .form3>h4:before{
 	background-position: 0 100%;
 }
 /*表单正文*/
-.mainform>.inmiddle>form> .choosebox{
+.mainform>.inmiddle>form .choosebox{
 	width: 100%;
 	box-sizing: border-box;
 	padding: 1.2rem 1rem 1.2rem 2rem;
 	background-color: #fbfcff;
 }
-form> .choosebox .leftbox{
+form .choosebox .leftbox{
 	margin-right: 7rem;
 }
 .choosebox .leftbox .radiobox{
+	display: block;
 	float: left;
 }
 .choosebox span{
@@ -379,8 +380,15 @@ form> .choosebox .leftbox{
 	width: 3.5rem;
 	height: 1.5rem;
 }
-.choosebox label{
-	margin: 0 0.5rem 0 0;
+.form1 label,
+.form3 label{
+	cursor: pointer;
+}
+.form2 li>label{
+	cursor: pointer;
+}
+.form2 .radiobox label{
+	padding-right: 0.5rem;
 	line-height: 2rem;
 	font-size: 0.9rem;
 	color: #999;
@@ -399,18 +407,17 @@ form> .choosebox .leftbox{
 	text-align: center; 
 	font-size: 0.7rem;
 	color: #999;
+	cursor:pointer;
 }
 select::-ms-expand { display: none; }
-.radiobox{
-	position: relative;
-}
+
 @media screen and (max-width: 768px){
 		.choosebox>select{
 		width: 7rem;	
 		padding-right: 2rem;	
 		}
 }
-/*
+/* select 样式修改
 .forselect:before{
 	position:relative;
 	display:block;
@@ -445,22 +452,12 @@ select::-ms-expand { display: none; }
 	line-height: 2.3rem;
 	color: #fff;
 	background-color: #e15053;
+	cursor:pointer;
 }
 .inmiddle>input[type=submit]:focus{
 	outline: none;
 }
-.inmiddle>input[type=submit]:after{
-	content: " ";
-    display: block;
-    border:4px solid #1d7ad9;
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    background: #fff;
-    position:relative;
-    top: -2px;
-    left: -2px;
-}
+
 
 
 
