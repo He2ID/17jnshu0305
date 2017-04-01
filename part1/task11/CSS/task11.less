@@ -1,0 +1,116 @@
+@r:20rem;
+@ft_white:#fff;
+@ft_nor:16px;
+@ft_big:18px;
+@bg_blue:#5fc0cd;
+.flex_container_center{
+	display: flex;
+	flex-flow: row;
+	align-content:center; 
+}
+.fix_top{
+	position: fixed;
+	top: 0px;
+}
+.icon{
+	display:inline-block;
+	vertical-align: top;
+	background-size:cover;
+}
+html,body{
+	background-color: #eff0f4;
+	font-size: 20px;
+	font-family:sans-serif;
+	padding-top:35px/@r;
+}
+@head_H:50;
+header{
+	.flex_container_center;
+	justify-content:space-between;
+	.fix_top;
+	background-color: @bg_blue;
+	height:@head_H/@r;
+	width: 100%;
+	font-size: @ft_big;
+	color: #fff;
+	p{
+		align-self: center;
+
+		&:first-child{
+		margin-left: 15/@r;
+		}
+		&:last-child{
+		margin-right: 15/@r;
+		}
+	}
+	
+	a:visited { 
+		color:@ft_white;
+		text-decoration:none; 
+	}
+}
+@input_H:26;
+.loginForm{
+	margin-top: (@head_H+10)/@r;
+	box-sizing: border-box;
+	width: 100%;
+		
+	.list{
+		background-color: #fff;
+		height:50/@r;
+		padding:(50-@input_H)/(2*@r) 15/@r;
+		box-sizing: border-box;
+	
+		&:first-child{
+			margin-bottom: 15/@r;
+			}
+	}
+
+	input{
+		margin-left: 15/@r;
+		padding-left:15/@r;
+		box-sizing: border-box; 
+		width: 80%;
+		height: @input_H/@r;
+		line-height: @input_H/@r;
+		font-size: @ft_nor;
+		border:none;
+		border-left:2px solid #eaedee;
+		vertical-align: top;
+		&:focus{
+			outline:none;
+		}
+	}
+	label{
+		width: 14/@r;
+		height: 20/@r;
+		margin: (@input_H - 20)/(@r*2) 5/@r;
+		background: url("../img/task4.png") no-repeat 0px 0px;
+		.icon;	
+	}
+ 	.passIcon{
+		background-position: 100% 0;
+	}
+}
+.submitButton{
+	margin-top: 35/@r;
+	height:50/@r;
+	line-height:50/@r;
+	width: 100%;
+	background-color:@bg_blue;
+	text-align: center;
+	font-size: @ft_big;
+	color: #fff;
+	border:none;
+}
+.forget{
+	float: right;
+	margin:10/@r 15/@r;
+	color: @bg_blue;
+	font-size: @ft_nor;
+
+	a:visited { 
+		color:@bg_blue;
+		text-decoration:none; 
+		}
+}
