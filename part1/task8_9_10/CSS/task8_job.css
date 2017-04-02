@@ -46,11 +46,14 @@
 	/*background-color: green;*/
 }
 .joblist .hoverbox:hover .mask{
-	opacity: 0.5;
+	background:rgba(0,0,0,0.5); 
 	z-index: 2;
 }
 .joblist .hoverbox:hover .jobcard{
 	z-index: 1;
+}
+.joblist .hoverbox:hover .mask p{
+	color: rgba(255, 255, 255, 1);
 }
 .jobcard{
 	padding-top: 1rem;
@@ -65,11 +68,10 @@
 	padding: 3rem 2rem;
 	height:24rem;
 	border-radius: 0.5rem;
-	background:rgb(0,0,0);
-	opacity: 0;
+	background:rgba(0,0,0,0);
 }
 .mask>p{
-	color: #fff;
+	color: rgba(255, 255, 255, 0);
 	font-size: 16px;
 }
  .mask>p:first-child{
