@@ -1,0 +1,106 @@
+@r:20rem;
+@ft_white:#fff;
+@ft_min:12px;
+@ft_small:14px;
+@ft_nor:16px;
+@ft_big:18px;
+@ft_grey:#b3b3b3;
+@bg_blue:#5fc0cd;
+@gap:15/@r;
+html,body{
+	background-color: #fff;
+	font-size: 20px;
+	font-family:sans-serif;
+}
+.borderbox{
+	width: 100%;
+	box-sizing: border-box;	
+}
+.flex_container_center{
+	display: flex;
+	flex-flow: row;
+	align-content:center; 
+}
+
+.fix_top{
+	position: fixed;
+	top: 0px;
+}
+.fix_bottom{
+	position: fixed;
+	bottom: 0px;	
+}
+//单行文字
+.single-text (@fontsize:16px){
+	font-size: @fontsize;
+	line-height: @fontsize;
+}
+.nav-text (@fontsize:16px){
+	height: @fontsize;
+	line-height: @fontsize;
+}
+//有图icon	
+.icon (@h:12px,@w:12px,@y:top) {
+	display:inline-block;
+	height: @h;
+	width: @w;
+	vertical-align:@y;
+	background-size:cover;
+	-webkit-background-size:cover; 
+}
+//无图icon 三角 圆
+.icon-dot(@h:12px,@w:12px){
+	display:block;
+	width: @h;
+	height: @w;
+	content: " ";
+}
+//
+.rounded-corners (@radius: 6px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+//居中
+.vertical-center{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%); 
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.xy-center{
+	position:absolute;
+	top:50%;left:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+//浮动
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+//各种border
+.line(top,@w:1px,@c:#ccc){
+	border-top: @w solid @c;
+}
+.line(bottom,@w:1px,@c:#ccc){
+	border-bottom: @w solid @c;
+}
+.line(left,@w:1px,@c:#ccc){
+	border-left: @w solid @c;
+}
+.line(right,@w:1px,@c:#ccc){
+	border-right: @w solid @c;
+}
+//单行溢出省略
+.onelinehidden{
+	overflow: hidden;  /*溢出隐藏*/
+    text-overflow: ellipsis; /*以省略号...显示*/
+    white-space: nowrap;  /*强制不换行*/
+}
