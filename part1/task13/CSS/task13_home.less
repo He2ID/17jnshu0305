@@ -1,0 +1,90 @@
+@import (reference) "common.less";
+html,body{
+	font-size: 20px;
+}
+body{
+	padding-bottom: 0;
+}
+/*返回上一游戏*/
+section{
+	background-color: @bg-grey;
+	padding:@gap; 
+}
+.previousPage{
+	padding:@gap;
+	border:1px solid #c9c9c9; 
+	background-color: #fff;
+	margin-bottom: @gap;
+	p:first-child{
+		float: right;
+	}
+	p>a{
+		font-size: @ft-big;
+		text-align: center;
+		color:@ft-grey;
+	}
+}
+/*轮播*/
+.gamebox{
+	background-color:#fff;
+	border: 1px solid #c9c9c9;
+	margin-bottom:1rem;
+	text-align: center;
+	position: relative;
+
+	.gametitle{
+		.nav-text (45/@r);
+		//margin-bottom:@gap;
+		font-size: @ft-big;
+		color:@ft-gold;
+		.line(bottom,1px,@ft-gold);		
+	}
+	.gamelist{
+		padding:@gap @gap*2; 
+	}
+	.gameitem{
+		a{
+			color: #fff;
+		}
+		h2{
+			font-size:@ft-nor;
+			.nav-text (75/@r);
+			color: #fff;
+			background: @bg-blue;
+			font-weight: normal;
+		}
+		p{
+			.nav-text (40/@r);
+			font-size: @ft-nor;
+			color: @ft-grey;			
+		}
+	}
+
+	.carousel-indicators{
+		position: relative;
+		bottom: 20px;
+		width: 15*4px;
+		margin: 0 auto;
+		li{	
+			float: left;
+			margin-left: 5px;
+			.icon-dot(10px,10px);
+			.rounded-corners(5px);
+			background: @bg-grey;
+			cursor: pointer;
+		} 
+		.on{
+			background: @bg-blue;
+		}
+	}
+	.carousel-control span{
+		position:absolute;
+		right: .5*@gap;
+		top: 50%;
+		margin-top: -@gap;
+		.icon-dot(0,0);
+		.line(left,@gap,@ft-gold);
+		.line(bottom,@gap,rgba(0,0,0,0));
+		.line(top,@gap,rgba(0,0,0,0));
+	}
+}

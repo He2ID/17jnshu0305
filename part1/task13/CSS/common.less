@@ -1,0 +1,113 @@
+@r:20rem;
+@gap:15px;
+@ft-white:#fff;
+@ft-min:12px;
+@ft-small:14px;
+@ft-nor:16px;
+@ft-big:18px;
+@ft-grey:#9a9a9a;
+@ft-gold:#fbb435;
+@bg-grey:#f0f0f0;
+@bg-blue:#29bde0;
+@bg-sandy:#f5c97b;
+@btn-pink:#f66f6f;
+
+html,body{
+	background-color: #fff;
+	font-size: 20px;
+	font-family:sans-serif;
+}
+.borderbox{
+	width: 100%;
+	box-sizing: border-box;	
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.flex-container(@x:space-between,@y:center){
+	display: flex;
+	flex-flow: row;
+	justify-content: @x;
+	align-content:@y; 
+}
+
+.fix-top{
+	position: fixed;
+	top: 0px;
+}
+.fix-bottom{
+	position: fixed;
+	bottom: 0px;	
+}
+//单行文字
+.single-text (@fontsize:16px,@lineh:1){
+	font-size: @fontsize;
+	line-height: @lineh;
+}
+.nav-text (@fontsize:16px){
+	height: @fontsize;
+	line-height: @fontsize;
+}
+//有图icon	
+.icon (@h:12px,@w:12px,@y:top,@size:100%,@display:inline-block) {
+	display:@display;
+	height: @h;
+	width: @w;
+	vertical-align:@y;
+	background-size: @size;
+}
+//无图icon 三角 圆
+.icon-dot(@w:12px,@h:12px){
+	display:block;
+	width: @w;
+	height: @h;
+	content: " ";
+}
+//
+.rounded-corners (@radius: 6px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+//居中
+.vertical-center{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%); 
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.xy-center{
+	position:absolute;
+	top:50%;left:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+//浮动
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+//各种border
+.line(top,@w:1px,@c:#ccc){
+	border-top: @w solid @c;
+}
+.line(bottom,@w:1px,@c:#ccc){
+	border-bottom: @w solid @c;
+}
+.line(left,@w:1px,@c:#ccc){
+	border-left: @w solid @c;
+}
+.line(right,@w:1px,@c:#ccc){
+	border-right: @w solid @c;
+}
+//单行溢出省略
+.onelinehidden{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

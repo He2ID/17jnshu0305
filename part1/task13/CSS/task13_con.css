@@ -1,0 +1,111 @@
+html,
+body {
+  font-size: 20px;
+}
+body {
+  padding: 60px 0 78px 0;
+}
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+@media screen and (min-width: 785px) {
+  .container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 768px;
+  }
+}
+/*导航*/
+.fixhead {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 60px;
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 1;
+  background: #29bde0;
+  color: #fff;
+}
+.fixhead .navbar-header {
+  padding: 0 15px;
+}
+@media screen and (min-width: 785px) {
+  .fixhead .navbar-header {
+    display: none;
+  }
+}
+.fixhead button {
+  width: 32px;
+  height: 30px;
+  box-sizing: border-box;
+  border: none;
+  background: #29bde0;
+}
+.fixhead .navbarbtn {
+  padding: 6px 6px 2px 6px;
+}
+.fixhead .navbarbtn .icon-bar {
+  display: block;
+  width: 20px;
+  height: 4px;
+  content: " ";
+  border-top: 3px solid #fff;
+}
+.fixhead .navbar-list {
+  background: #29bde0;
+  padding: 0 15px;
+}
+.fixhead .navbar-list li {
+  float: left;
+}
+.fixhead .navbar-list li a {
+  padding: 0 20px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+@media screen and (max-width: 784px) {
+  .fixhead .navbar-list {
+    display: none;
+    margin-top: 15px;
+    border-top: 2px solid #fff;
+  }
+  .fixhead .navbar-list li {
+    float: none;
+  }
+  .fixhead .navbar-list li a {
+    text-align: left;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 785px) {
+  .fixhead #navbartab {
+    display: block!important;
+  }
+}
+/*底部*/
+.fixfoot {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.fixfoot input {
+  font-size: 18px;
+  line-height: 1;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+}

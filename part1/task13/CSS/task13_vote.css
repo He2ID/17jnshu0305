@@ -1,0 +1,202 @@
+@media screen and (max-width: 320px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 390px) {
+  html,
+  body {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 460px) {
+  html,
+  body {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 530px) {
+  html,
+  body {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 531px) and (max-width: 600px) {
+  html,
+  body {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 670px) {
+  html,
+  body {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 671px) and (max-width: 740px) {
+  html,
+  body {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 741px) {
+  html,
+  body {
+    font-size: 55px;
+  }
+}
+/*导航*/
+.fixhead .navbar-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.fixhead .navbar-header p {
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+@media screen and (min-width: 785px) {
+  .fixhead .navbar-header {
+    display: none;
+  }
+}
+.fixhead .toclose {
+  padding: 0;
+}
+.fixhead .toclose span {
+  height: 30px;
+  line-height: 30px;
+  font-size: 36px;
+  color: #fff;
+}
+/*页脚投票栏*/
+.fixfoot {
+  padding: 15px;
+  background: #29bde0;
+}
+.fixfoot input {
+  margin: 0 10%;
+  width: 80%;
+  font-weight: bold;
+  background: #fbb435;
+}
+section {
+  background: #29bde0;
+}
+/*投票指引&音乐*/
+.votesong {
+  background-color: #b9e9f5;
+  padding: 15px;
+}
+.votesong button {
+  float: right;
+  background: url("../img/audio.png") no-repeat;
+  display: block;
+  height: 30px;
+  width: 30px;
+  vertical-align: top;
+  background-size: 100%;
+  border: none;
+}
+.votesong p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.guide {
+  padding-left: 45px;
+  font-size: 14px;
+  line-height: 2;
+  color: #fff;
+}
+.guide:before {
+  display: block;
+  width: 0;
+  height: 0;
+  content: " ";
+  border-top: 0.4rem solid #b9e9f5;
+  border-left: 0.2rem solid rgba(0, 0, 0, 0);
+  border-right: 0.2rem solid rgba(0, 0, 0, 0);
+}
+/*投票*/
+.voteform {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-flow: row wrap;
+  padding: 15px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  width: 100%;
+  background: #29bde0;
+}
+.voteform .voteitem {
+  width: 3.5rem;
+  margin-bottom: 0.3rem;
+}
+.voteform .voteitem:hover .iconrow {
+  opacity: 1;
+}
+.voteform .voteitem h2 {
+  box-sizing: border-box;
+  border: 0.15rem solid #fff;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 0.9rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #000;
+  font-weight: normal;
+  background-color: #f5c97b;
+}
+.voteform .voteitem h3 {
+  width: 3.2rem;
+  margin-top: -1.15rem;
+  margin-left: 0.15rem;
+  font-size: 12px;
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  background: rgba(41, 198, 224, 0.53);
+}
+.voteform .voteitem .iconrow {
+  width: 3.5rem;
+  padding: 0.5rem 0 0.15rem 0;
+  font-size: 0;
+  opacity: 0;
+}
+.voteform .voteitem .iconrow span {
+  margin-right: 0.5rem;
+  background: url("../img/choose.png") no-repeat;
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  vertical-align: top;
+  background-size: 100%;
+}
+.voteform .voteitem .iconrow span:last-child {
+  margin-right: 0;
+}
+.voteform .voteitem .iconrow .icon1 {
+  background-position: 0 0;
+}
+.voteform .voteitem .iconrow .icon2 {
+  background-position: 0 33.33%;
+}
+.voteform .voteitem .iconrow .icon3 {
+  background-position: 0 66.67%;
+}
+.voteform .voteitem .iconrow .icon4 {
+  background-position: 0 100%;
+}

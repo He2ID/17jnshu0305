@@ -1,0 +1,116 @@
+html,
+body {
+  font-size: 20px;
+}
+/*头部*/
+.fixhead {
+  padding: 0 15px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.fixhead a,
+.fixhead p {
+  align-self: center;
+}
+.fixhead a:first-child span {
+  background: url("../img/home7.png") no-repeat center;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: center;
+  background-size: 100%;
+}
+.fixhead a:last-child span {
+  background: url("../img/notice.png") no-repeat center;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: center;
+  background-size: 100%;
+}
+/*底部投票*/
+.fixfoot {
+  padding: 15px 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-content: center;
+  background: rgba(41, 189, 224, 0.5);
+}
+.fixfoot input {
+  width: 42%;
+  -ms-align-self: center;
+  align-self: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.fixfoot input:first-child {
+  background: #f66f6f;
+}
+.fixfoot input:last-child {
+  background: #fbb435;
+}
+/*windetail*/
+.windetail {
+  position: relative;
+  padding: 15px 10%;
+  color: #fff;
+  background: #29bde0;
+}
+.windetail h2 {
+  color: #fbb435;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+.windetail p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.windetail p span {
+  display: inline-block;
+  padding-right: 15px;
+}
+.win {
+  margin: 0 auto;
+  background: url("../img/win.png") no-repeat;
+  display: inline-block;
+  height: 5.1rem;
+  width: 8.7rem;
+  vertical-align: top;
+  background-size: 100%;
+  display: block;
+  padding: 15px;
+}
+.win h1 {
+  margin-top: 3.6rem;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+}
+/*winform*/
+.winform {
+  position: relative;
+  padding: 15px 10% 0;
+  color: #9a9a9a;
+}
+.winform h4 {
+  float: right;
+  font-size: 12px;
+}
+.winform h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #000;
+}
+.winform p {
+  font-size: 14px;
+  line-height: 1.2;
+}

@@ -1,0 +1,98 @@
+html,
+body {
+  font-size: 20px;
+}
+body {
+  padding-bottom: 0;
+}
+/*返回上一游戏*/
+section {
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+.previousPage {
+  padding: 15px;
+  border: 1px solid #c9c9c9;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.previousPage p:first-child {
+  float: right;
+}
+.previousPage p > a {
+  font-size: 18px;
+  text-align: center;
+  color: #9a9a9a;
+}
+/*轮播*/
+.gamebox {
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+.gamebox .gametitle {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-size: 18px;
+  color: #fbb435;
+  border-bottom: 1px solid #fbb435;
+}
+.gamebox .gamelist {
+  padding: 15px 30px;
+}
+.gamebox .gameitem a {
+  color: #fff;
+}
+.gamebox .gameitem h2 {
+  font-size: 16px;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  color: #fff;
+  background: #29bde0;
+  font-weight: normal;
+}
+.gamebox .gameitem p {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.gamebox .carousel-indicators {
+  position: relative;
+  bottom: 20px;
+  width: 60px;
+  margin: 0 auto;
+}
+.gamebox .carousel-indicators li {
+  float: left;
+  margin-left: 5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: " ";
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.gamebox .carousel-indicators .on {
+  background: #29bde0;
+}
+.gamebox .carousel-control span {
+  position: absolute;
+  right: 7.5px;
+  top: 50%;
+  margin-top: -15px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: " ";
+  border-left: 15px solid #fbb435;
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-top: 15px solid rgba(0, 0, 0, 0);
+}
