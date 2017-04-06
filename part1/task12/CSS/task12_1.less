@@ -1,0 +1,216 @@
+@import (reference) "task12_common.less";
+html,body{
+	font-size: 20px;
+}
+@head_H:58;
+@footer_H:64;
+body{
+	padding:@head_H/@r 0 @footer_H/@r 0;
+}
+.test{
+	border: 1px solid red;
+}
+/*头部固定*/
+@btn_H:40;
+.fixhead{
+	.fix_top;
+	.borderbox;
+	padding: (@head_H - @btn_H)/(2*@r) @gap;
+	.single-text(@ft_big);	
+	background-color:@bg_blue;
+	z-index: 1;
+	.map{
+		.right;
+		.icon(20/@r,20/@r,center);
+		margin-top: (@btn_H - 20)/(2*@r);
+		img{
+			width: 100%;
+		}
+	}
+
+	.btn-group{
+		width: 50%;
+		margin: 0 auto;
+		background:darken(@bg_blue,10%);
+		.rounded-corners(6px);	
+	}
+
+	.btn{
+		display: inline-block;
+		width: 50%;
+		.nav-text (@btn_H/@r);
+		font-size: @ft_nor;
+		color: #fff;
+		background:darken(@bg_blue,10%);
+		.rounded-corners(6px);		
+		border: none;
+		&:focus{
+			outline: none;
+		}
+	}
+	@media screen and (max-width: 320px){
+	.btn-group{width:70%;}	
+	}
+	.patient{
+		//background:darken(@bg_blue,10%);
+		//color: #fff;	
+	}
+	.nurse{
+		background: #fff;
+		color: @bg_blue;
+	}	
+}
+/*底部固定*/
+.footer{
+	.fix_bottom;
+	.borderbox;
+	height: @footer_H/@r;
+	background-color:#f8fafb;
+
+	.btn{
+		display: inline-block;
+		width: 33.33%;
+		height: @footer_H/@r;
+		vertical-align: top;
+		background-color:#f8fafb;
+		border: none;
+		&:focus{
+			outline: none;
+			background-color:darken(#f8fafb,10%);
+		}
+
+		img{
+			height: 24/@r;
+			width: 24/@r;
+			margin: 0 auto;
+		}
+	}
+	.firstpagebtn{
+		color:@bg_blue;
+	}
+	.mybtn{
+		color:@ft_grey;
+	}	
+	.write p{
+		.icon-dot(2.4rem,2.4rem);
+		margin: 0 auto;
+		.rounded-corners(1.2rem);
+		background-color:@bg_blue;
+
+		&:before{
+			content: " ";
+			background:url(../img/write.png);
+			.icon(20/@r,20/@r);
+			.xy-center;
+		}
+	}
+}
+/*下拉菜单*/
+.nav{
+	.borderbox;
+	.btn{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;	
+		box-sizing: border-box;			
+		width: 33.33%;
+		height: @btn_H*1.2/@r;/*没有时下拉会影响整体Y*/
+		font-size: @ft_small;
+		background-color:#fff;
+		border: none;
+		.line(left,1px,@ft_grey);
+		.line(bottom,1px,@ft_grey);
+			&:hover .subNav{
+				display: block;	
+			}	
+			&:after{
+				position:absolute;
+				top: 50%;
+				right:@gap/2;
+				.icon-dot(0,0);
+				.line(top,6/@r,@ft_grey);
+				.line(left,6/@r,#fff);
+				.line(right,6/@r,#fff);
+			}
+
+		>a{	
+			color:@ft_grey;
+			width: 100%;
+			.nav-text (@btn_H*1.2/@r);
+			text-align: center;
+		}	
+		.subNav{
+			box-sizing: border-box;
+			border:1px solid @ft_grey;
+			background-color: #fff;
+			display:none;	
+		}
+		.subNav li{
+			width: 100%;
+			a{
+				.nav-text (@btn_H/@r);
+				color:@ft_grey;	
+				text-align: center;
+				&:hover{font-weight: bold;}			
+			}
+		}
+	}
+}
+/*中部表格*/
+.row{
+	.borderbox;
+	padding:@gap; 
+	.line(bottom,1px,@ft_grey);
+
+	.date{
+		.left;
+		.borderbox;
+		width: 65%;
+		@media screen and (min-width: 768px){
+			padding-left: 10%;
+		}
+		p{	
+			font-size: @ft_nor;
+			.onelinehidden;
+		}
+		.txt1 span{
+			background: url("../img/formicon.png") 0 0 no-repeat;
+		}
+		.txt3 span{
+			background: url("../img/formicon.png") 0 -13px no-repeat;
+		}
+		.txt1,
+		.txt3{
+			.single-text (@ft_small);
+			color:@ft_grey;
+			span{
+				margin-right: @gap/2;
+				.icon (12px,12px,center); 
+			}	
+		}
+		.txt2{
+			padding-left:(12+7.5)/@r;
+			line-height: 1.5;
+		}
+	}
+	
+	.price{
+		.right;
+		.borderbox;
+		width: 35%;		
+		@media screen and (min-width: 768px){
+			padding-right: 10%;
+		}
+		p{
+			line-height: @ft_small*2+1.5*@ft_nor;	
+			text-align: right;		
+			font-size: @ft_nor;
+			.onelinehidden;
+			color: red;
+			span{
+				color: @bg_blue;
+			}
+		}
+	}	
+}
+	

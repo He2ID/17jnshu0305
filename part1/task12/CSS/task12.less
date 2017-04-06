@@ -1,0 +1,157 @@
+@import (reference) "task12_common.less";
+html,body{
+	font-size: 20px;
+}
+@head_H:58;
+@footer_H:64;
+body{
+	padding:@head_H/@r 0 @footer_H/@r 0;
+}
+/*页眉*/
+header{
+	.fix_top;
+	z-index:1;	
+	.borderbox;
+	padding: (@head_H - 18)/(2*@r) @gap;
+	.single-text(@ft_big);		
+	background-color: @bg_blue;
+	color: @ft_white;
+
+	.back a{
+		.left;	
+		color: @ft_white;
+	}
+	.maintitle{
+		text-align: center;
+		vertical-align: center;
+	}
+}
+/*页脚选项*/
+
+footer{
+	.fix_bottom;
+	.flex_container_center;
+	justify-content:space-around;	
+	.borderbox;
+	height: @footer_H/@r;
+	padding:0 @gap;	
+	background-color: #fff;
+	
+	.contact{
+		height:45/@r;
+		width: 45%;
+		align-self: center;
+		text-align: center;
+		font-size: @ft_big;
+		border:2px solid @bg_blue;	
+		.rounded-corners();
+		&:focus{
+			outline: none;
+		}
+	}
+	.message{
+		background-color:#fff;
+		color: @bg_blue;
+	}
+	.call{
+		background-color:@bg_blue;	
+		color: #fff;	
+	}
+}
+ @media only screen and (min-width:640px){
+	footer .contact{
+		width: 30%;
+	}
+}
+/*头像介绍块*/
+@userimg_H:85;
+.introduce{
+	.borderbox;
+	background: url(../img/banner.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	.mask{
+		.borderbox;
+		height:167/@r;
+		background-color: rgba(0,0,0,0.2);
+		padding: 1.95rem 0.75rem;
+	}
+
+	.userimg{
+		.left;
+		width:@userimg_H/@r;
+		height:@userimg_H/@r;
+		img{
+			width: 100%;
+		}
+	}
+
+	.userinfo{
+		height:40/@r;
+		padding: 1rem 0 1.25rem;
+		vertical-align: center;
+		margin-left:(@userimg_H + 20)/@r;
+		color:@ft_white;
+
+		p:first-child{
+			.single-text(@ft_big);	
+			margin-bottom: 10/@r;
+		}
+		span,
+		p:last-child{
+			.single-text(@ft_small);	
+		}
+
+		.location{
+			margin-right:@gap;			
+			background:url(../img/position.png) no-repeat;
+			.icon (@ft_small,10/@r);
+		}
+	}
+}
+/*专业技能详细介绍*/
+.detail .tab{
+	padding:1.05rem 0px 1.05rem @gap;
+	border-bottom: 1px solid #ccc;
+	.single-text(@ft_nor);
+
+	&:before{
+		content: " ";
+		.icon (@ft_nor,@gap);
+		.line(left,2px,@bg_blue);
+	}
+}
+
+.detail li{
+	position: relative;	
+	padding: @gap;
+	margin-left: @gap;
+	.line(bottom);
+	font-size: @ft_nor;
+
+	.left1{
+		display: inline-block;
+		margin-right:@gap;
+		}
+
+	.star{
+		margin-right: 10px;
+		background: url("../img/redstar.png") no-repeat;
+		.icon(12px,12px,center);
+	}	
+	.left{	
+		.vertical-center;
+		padding-right:@gap;
+		.line(right,2px,@ft_grey);
+		color: @ft_grey;
+	}
+	.right{
+		margin-left: 95/@r;
+		line-height: @ft_big;
+	}
+	.strong{
+		font-weight: bold;
+		color: #e26163;
+	}
+}

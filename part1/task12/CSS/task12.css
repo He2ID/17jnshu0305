@@ -1,0 +1,177 @@
+html,
+body {
+  font-size: 20px;
+}
+body {
+  padding: 2.9rem 0 3.2rem 0;
+}
+/*页眉*/
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0.75rem;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #5fc0cd;
+  color: #fff;
+}
+header .back a {
+  float: left;
+  color: #fff;
+}
+header .maintitle {
+  text-align: center;
+  vertical-align: center;
+}
+/*页脚选项*/
+footer {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+  height: 3.2rem;
+  padding: 0 0.75rem;
+  background-color: #fff;
+}
+footer .contact {
+  height: 2.25rem;
+  width: 45%;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #5fc0cd;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+footer .contact:focus {
+  outline: none;
+}
+footer .message {
+  background-color: #fff;
+  color: #5fc0cd;
+}
+footer .call {
+  background-color: #5fc0cd;
+  color: #fff;
+}
+@media only screen and (min-width: 640px) {
+  footer .contact {
+    width: 30%;
+  }
+}
+/*头像介绍块*/
+.introduce {
+  width: 100%;
+  box-sizing: border-box;
+  background: url(../img/banner.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.introduce .mask {
+  width: 100%;
+  box-sizing: border-box;
+  height: 8.35rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.95rem 0.75rem;
+}
+.introduce .userimg {
+  float: left;
+  width: 4.25rem;
+  height: 4.25rem;
+}
+.introduce .userimg img {
+  width: 100%;
+}
+.introduce .userinfo {
+  height: 2rem;
+  padding: 1rem 0 1.25rem;
+  vertical-align: center;
+  margin-left: 5.25rem;
+  color: #fff;
+}
+.introduce .userinfo p:first-child {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 0.5rem;
+}
+.introduce .userinfo span,
+.introduce .userinfo p:last-child {
+  font-size: 14px;
+  line-height: 14px;
+}
+.introduce .userinfo .location {
+  margin-right: 0.75rem;
+  background: url(../img/position.png) no-repeat;
+  display: inline-block;
+  height: 14px;
+  width: 0.5rem;
+  vertical-align: top;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+/*专业技能详细介绍*/
+.detail .tab {
+  padding: 1.05rem 0px 1.05rem 0.75rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 16px;
+}
+.detail .tab:before {
+  content: " ";
+  display: inline-block;
+  height: 16px;
+  width: 0.75rem;
+  vertical-align: top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  border-left: 2px solid #5fc0cd;
+}
+.detail li {
+  position: relative;
+  padding: 0.75rem;
+  margin-left: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+.detail li .left1 {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+.detail li .star {
+  margin-right: 10px;
+  background: url("../img/redstar.png") no-repeat;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  vertical-align: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.detail li .left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  padding-right: 0.75rem;
+  border-right: 2px solid #b3b3b3;
+  color: #b3b3b3;
+}
+.detail li .right {
+  margin-left: 4.75rem;
+  line-height: 18px;
+}
+.detail li .strong {
+  font-weight: bold;
+  color: #e26163;
+}
