@@ -1,0 +1,165 @@
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+body {
+  background-color: #fafafa;
+}
+.warn {
+  color: #f01400;
+}
+/*PC固定宣传栏*/
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 50px;
+  }
+  .hotline {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  body {
+    padding-top: 40px;
+  }
+}
+.hotline {
+  height: 40px;
+  background-color: #fff;
+}
+.hotline span {
+  color: #29b078;
+  font-size: 14px;
+  line-height: 40px;
+}
+.hotline ul li > a {
+  padding: 8px 15px;
+}
+.hotline ul .wx {
+  background: url("../img/wx.png");
+}
+.hotline ul .QQ {
+  background: url("../img/QQ.png");
+}
+.hotline ul .wb {
+  background: url("../img/wb.png");
+}
+.hotline ul .wb,
+.hotline ul .QQ,
+.hotline ul .wx {
+  display: block;
+  height: 24px;
+  width: 25px;
+  vertical-align: middle;
+  background-size: 100%;
+}
+/*网站导航*/
+.realnavbar .navbar-header .navbar-brand {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.realnavbar .navbar-list a {
+  padding: 0 1rem;
+  line-height: 4.85rem;
+  color: #fff;
+  border-bottom: 3px solid #29b078;
+}
+/*导航栏默认激活&hover后变色*/
+@media screen and (min-width: 767px) {
+  .realnavbar .navbar-list ul:hover .active {
+    border-bottom: 3px solid #29b078;
+  }
+  .realnavbar .navbar-list li > a:hover,
+  .realnavbar .navbar-list li > a:active,
+  .realnavbar .navbar-list li > .active,
+  .realnavbar .navbar-list li > .active:hover {
+    border-bottom: 3px solid #fff;
+  }
+}
+/*flex-item排序*/
+.navbarbtn {
+  order: 1;
+}
+@media screen and (max-width: 767px) {
+  .realnavbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .realnavbar .navbarbtn {
+    border: none;
+  }
+  .realnavbar .navbar-list li:hover {
+    background-color: #fff;
+  }
+  .realnavbar .navbar-list li:hover a {
+    font-weight: bold;
+    color: #29b078;
+  }
+  .realnavbar .navbar-list li a {
+    border-bottom: 1px solid #fff;
+  }
+}
+/*页脚*/
+footer {
+  margin-top: 12rem;
+  padding-top: 2rem;
+  font-size: 14px;
+  color: #fff;
+  background: #29b078;
+}
+footer .container > p {
+  font-size: 12px;
+  line-height: 26px;
+}
+footer h4 {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 1.2;
+}
+footer p > a {
+  display: inline-block;
+  line-height: 2rem;
+  color: #fff;
+}
+footer .col4 > img {
+  margin: 2px auto;
+  width: 100%;
+  max-width: 92px;
+}
+@media screen and (max-width: 414px) {
+  .col2 {
+    display: none;
+  }
+  .col1,
+  .col4 {
+    width: 50%;
+  }
+}
+/*站点route*/
+.innernavbar .route {
+  font-size: 16px;
+  line-height: 4rem;
+}
+.innernavbar .route a {
+  display: inline-block;
+  color: #000;
+}
+.innernavbar .route > span {
+  color: #29b078;
+}
