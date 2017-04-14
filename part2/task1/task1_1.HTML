@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task1_1</title>
+	<style>
+		body{
+			margin:0;
+		}
+		.contain{
+			margin:20px auto 0;
+			width: 40vw;
+			height: 40vw;
+			box-sizing: border-box;
+			zoom:1;
+		}
+		.contain:after{
+			display: block;
+			clear: both;
+			content: " ";
+			visibility: hidden;
+			height: 0;
+		}		
+		.contain>.box{
+			width:30%;
+			padding-top:15%;
+			padding-bottom: 15%;
+        	margin: 1.66%;
+        	background-color:#FEA500;
+        	float: left;
+		}
+		button{
+			display: block;
+			width: 40vw;
+			height: 30px;
+			margin: 0 auto;
+			box-sizing: border-box;
+			line-height: 30px;
+			font-weight: bold;
+			color: #fff;
+			border:2px solid #FEA500;
+			border-radius: 5px;
+			background-color: #FEA500;			
+		}
+		button:active,
+		button:focus{
+			background: #fff;
+			color: #FEA500;
+			outline: none;
+		}
+		button:nth-of-type(1){
+			margin-bottom:10px;
+		}	
+	    @media only screen and (max-width:425px){
+		    .contain{
+		        width:100vw;
+		        height:100vw;
+		    }
+		    button{
+		    	width:100vw;
+		    }
+		}		
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<button id="on" type="button">开始闪</button>
+	<button id="stop" type="button">结束闪</button>
+	<script src="js/task1.js"></script>
+</body>
+</html>
