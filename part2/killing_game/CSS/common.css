@@ -1,0 +1,112 @@
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+  margin: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  display: block;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+.clearfloat {
+  zoom: 1;
+}
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: " ";
+  visibility: hidden;
+  height: 0;
+}
+html,
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 40px;
+  }
+}
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  z-index: 3;
+  height: 2.5rem;
+  padding: 0 10px;
+  background: #29bde0;
+}
+header > span {
+  align-self: center;
+  font-size: 1rem;
+  color: #fff;
+}
+header > .close,
+header > .back {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+header > .help {
+  background: url(../img/help.png) no-repeat;
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  vertical-align: middle;
+  background-size: 100%;
+}
+@media screen and (min-width: 768px) {
+  header {
+    width: 768px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+.goldbtn {
+  width: 100%;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #fab344;
+  border: none;
+  outline: none;
+}

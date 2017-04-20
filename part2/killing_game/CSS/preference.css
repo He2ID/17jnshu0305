@@ -1,0 +1,182 @@
+body {
+  padding-top: 2.5rem;
+}
+section {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  padding: 10px 7.5px;
+  background-color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+/*玩家配比*/
+.player-role {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  margin-bottom: 10px;
+  background: #fff;
+}
+.player-role > p {
+  float: left;
+  width: 3rem;
+  box-sizing: border-box;
+  padding: 3.75rem 1rem;
+  font-size: 1rem;
+  background: #fff;
+}
+.player-role .role-detail {
+  position: relative;
+  margin-left: 3rem;
+  min-height: 12.7rem;
+  box-sizing: border-box;
+  padding: 0.5rem 0 1.5rem;
+  border-left: 1px solid #ccc;
+  background: #fbfbfb;
+}
+.player-role .role-detail > button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  color: #29bde0;
+  background: #fbfbfb;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.player-role .role-detail .roleA,
+.player-role .role-detail .roleB {
+  list-style: square inside;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 8%;
+  float: left;
+  font-size: 0.9rem;
+  line-height: 1.75rem;
+  color: #a1a1a1;
+}
+.player-role .role-detail .roleA:before,
+.player-role .role-detail .roleB:before {
+  display: inline-block;
+  vertical-align: top;
+  content: "■";
+  font-size: 0.5rem;
+  line-height: 1.75rem;
+  margin-right: 0.5rem;
+}
+.player-role .role-detail .roleA:before {
+  color: #fab344;
+}
+.player-role .role-detail .roleB:before {
+  color: #29bde0;
+}
+/*水民、幽灵词组*/
+.player-words {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.player-words input {
+  margin-bottom: 0.25rem;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+/*玩家人数*/
+.player-num {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0.1rem 0;
+  background: #fff;
+}
+.player-num p {
+  margin-left: 1rem;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+.player-num p > input {
+  width: 1.75rem;
+  height: 1rem;
+  margin: 0 10px;
+  box-sizing: border-box;
+  padding: 5px 0 5px 10px;
+  font-size: 0.7rem;
+  color: #ee9f1b;
+  background: #f0f0f0;
+  border: none;
+}
+.player-num .range {
+  width: 90%;
+  margin: 1.15rem auto;
+}
+.player-num .range > input {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 4px;
+  vertical-align: middle;
+  background: #ffe6be;
+  cursor: pointer;
+}
+.player-num .range > input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 0.9rem;
+  background: #fff;
+  border: 2px solid #fab344;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0.45rem 0.15rem #fff inset, 0.45rem -0.15rem #fff inset, 0.5rem 0 #fab344 inset, 0.7rem 0 #fff inset, 0.75rem 0 #fab344 inset, 0.95rem 0 #fff inset, 1rem 0 #fab344 inset;
+  -moz-box-shadow: 0.45rem 0.15rem #fff inset, 0.45rem -0.15rem #fff inset, 0.5rem 0 #fab344 inset, 0.7rem 0 #fff inset, 0.75rem 0 #fab344 inset, 0.95rem 0 #fff inset, 1rem 0 #fab344 inset;
+}
+.player-num .range .minus,
+.player-num .range .plus {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  vertical-align: middle;
+  line-height: 0.75rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #ee9f1b;
+  border: 1px solid #d0d6d9;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .player-num .range {
+    width: 80%;
+  }
+}
+section > form > button {
+  margin-bottom: 0.75rem;
+}

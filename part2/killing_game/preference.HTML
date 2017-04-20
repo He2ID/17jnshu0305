@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>杀人游戏_Preferences</title>
+	<link rel="stylesheet" href="CSS/common.css">
+	<link rel="stylesheet" href="CSS/preference.css">
+</head>
+<body>
+<header>
+	<span class="back">&lt;</span>
+	<span>参数设置</span>
+	<span class="help"></span>
+</header>
+<section>
+		<div class="player-role clearfloat">
+			<p>玩家配比</p>
+			<div class="role-detail clearfloat"  id="roleDetail">
+				<button type="button" onclick="playerrole()">点击设置</button>	
+			</div>
+		</div>
+		<div class="player-words">
+			<input type="text" placeholder="水民词组">
+			<input type="text" placeholder="杀手词组">
+		</div>
+		<div class="player-num">
+			<p>玩家人数
+				<input id="showNum" type="number" name="play-num" min="4" max="18" placeholder="6" onchange ="changeshow()" onkeypress="getEnter()">人
+			</p>
+			<div class="range">
+				<span class="minus" onclick="minusnum()">-</span>
+				<input id="rangeNum" type="range" name="play-num" min="4" max="18" value="6" oninput="changerange()" onchange="changerange()"/>
+				<span class="plus"  onclick="plusnum()">+</span>
+			</div>
+		</div>
+		<button class="goldbtn" onclick="newgame()">去发牌</button>
+	
+</section>
+<script src="js/preference.js"></script>
+</body>
+</html>
