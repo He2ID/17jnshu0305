@@ -89,7 +89,7 @@ function newgame(){
 		alert("请设置【玩家人数】,【玩家配比】");
 	}
 	else{
-		location.href = "https://He2ID.github.io/17jnshu0305/part2/killing_game/check_role.HTML";
+		location.href = "check_role.HTML";
 	}
 }
 window.onload = function () {
