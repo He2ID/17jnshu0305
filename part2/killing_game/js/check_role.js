@@ -2,7 +2,10 @@ $(function(){
 	//for off-line test var roleArray = new Array();
 	//for off-line test var roleArray = [1,0,1,1,1];
 	//for off-line test sessionStorage.setItem("playerroleArray",JSON.stringify(roleArray));  
-	var rolearray = JSON.parse( sessionStorage.getItem("playerroleArray"));  
+	var rolearray = JSON.parse( sessionStorage.getItem("playerroleArray")); 
+	if (rolearray === null) {
+		location.href = "https://He2ID.github.io/17jnshu0305/part2/killing_game/preference.HTML"
+	}
 	console.log(rolearray);
 	var clickNum = 0;
 	//A--杀手 B--水民
