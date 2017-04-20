@@ -5,6 +5,7 @@ var rangeNum = document.getElementById('rangeNum');
 function changeshow() {
 	if (showNum.value >= 3 && showNum.value <= 18 && showNum.value%1===0) {
 		playerNum = rangeNum.value = showNum.value;
+		rangeColor();
 	}else if (showNum.value < 3 || showNum.value > 18){
 		alert ("输入【玩家人数】请在【4--18】之间" );
 	}else if (showNum.value%1 !== 0){
@@ -13,16 +14,23 @@ function changeshow() {
 }
 function changerange() {
 	playerNum = showNum.value = rangeNum.value;
+	rangeColor();
 }
 function minusnum(){
 	if (playerNum>3) {
 		rangeNum.value = showNum.value = --playerNum;
+		rangeColor();
 	}
 }
 function plusnum(){
 	if (playerNum<18) {
-		rangeNum.value = showNum.value = ++playerNum;		
+		rangeNum.value = showNum.value = ++playerNum;
+		rangeColor();		
 	}
+}
+function rangeColor(){
+	var rangemin =((rangeNum.value - 4)*7).toFixed(1)+"%";
+	rangeNum.style.backgroundSize= rangemin+" 100%";
 }
 //玩家角色分配 A--杀手 B--水民
 var roleDetail=document.getElementById("roleDetail"); 
@@ -89,7 +97,7 @@ function newgame(){
 		alert("请设置【玩家人数】,【玩家配比】");
 	}
 	else{
-		location.href = "check_role.HTML";
+		window.location.href = "check_role.HTML";
 	}
 }
 window.onload = function () {
@@ -101,5 +109,6 @@ window.onload = function () {
 			var roleArrayold = JSON.parse( sessionStorage.getItem("playerroleArray"));
 			addchild(roleArrayold,roleDetail,"div");
 			playerNum = showNum.value = rangeNum.value = roleArrayold.length;
+			rangeColor();
 	}
 }

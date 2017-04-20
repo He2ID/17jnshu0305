@@ -138,7 +138,9 @@ section {
   width: 80%;
   height: 4px;
   vertical-align: middle;
-  background: #ffe6be;
+  outline: none;
+  background: -webkit-linear-gradient(orange, orange) no-repeat, #ffe6be;
+  background-size: 14% 100%;
   cursor: pointer;
 }
 .player-num .range > input::-webkit-slider-thumb {
@@ -154,6 +156,9 @@ section {
   border-radius: 4px;
   box-shadow: 0.45rem 0.15rem #fff inset, 0.45rem -0.15rem #fff inset, 0.5rem 0 #fab344 inset, 0.7rem 0 #fff inset, 0.75rem 0 #fab344 inset, 0.95rem 0 #fff inset, 1rem 0 #fab344 inset;
   -moz-box-shadow: 0.45rem 0.15rem #fff inset, 0.45rem -0.15rem #fff inset, 0.5rem 0 #fab344 inset, 0.7rem 0 #fff inset, 0.75rem 0 #fab344 inset, 0.95rem 0 #fff inset, 1rem 0 #fab344 inset;
+}
+.player-num .range > input:focus {
+  outline: none;
 }
 .player-num .range .minus,
 .player-num .range .plus {
