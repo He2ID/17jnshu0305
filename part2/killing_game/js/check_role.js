@@ -1,10 +1,9 @@
 $(function(){
-	var roleArray = new Array();
-	var roleArray = [1,0,1,1,1];
-	sessionStorage.setItem("playerroleArray",JSON.stringify(roleArray));  //for off-line test
+	//for off-line test var roleArray = new Array();
+	//for off-line test var roleArray = [1,0,1,1,1];
+	//for off-line test sessionStorage.setItem("playerroleArray",JSON.stringify(roleArray));  
 	var rolearray = JSON.parse( sessionStorage.getItem("playerroleArray"));  
 	console.log(rolearray);
-	var playerNum = rolearray.length;
 	var clickNum = 0;
 	//A--杀手 B--水民
 	var $roleA =$("<p>杀手</p>");
