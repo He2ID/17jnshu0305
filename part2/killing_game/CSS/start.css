@@ -20,6 +20,7 @@ section > p:last-child {
 }
 section > p:first-child {
   text-align: right;
+  cursor: pointer;
 }
 section > p:last-child {
   text-align: center;
