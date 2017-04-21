@@ -53,8 +53,6 @@ function playerrole(){
 		//数组存储
 		sessionStorage.setItem("playerroleArray",JSON.stringify(roleArray));  
 		console.log(roleArray);
-	 	 //var am = JSON.parse( sessionStorage.getItem("playerroleArray"));  
-	 	//console.log(am);
 	}
 }
 //依数组baseArray 于fatherDom内插入 addElement
@@ -104,7 +102,7 @@ window.onload = function () {
 	//页面未关闭情况下跳回 恢复原角色分配
 	if (sessionStorage.getItem("playerroleArray") === null) {return 1;}
 		else{
-			alert("已恢复本次角色分配。若要重新分配【玩家角色】，请点击【点击设置】");
+			//alert("已恢复本次角色分配。若要重新分配【玩家角色】，请点击【点击设置】");
 			console.log("有原游戏内存，恢复原先游戏角色分配");
 			var roleArrayold = JSON.parse( sessionStorage.getItem("playerroleArray"));
 			addchild(roleArrayold,roleDetail,"div");
