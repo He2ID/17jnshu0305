@@ -44,7 +44,7 @@ $(function(){
 				$("section>button").text("查看"+ (Math.ceil(clickNum/2)+1) +"号身份");
 		}
 		if((clickNum/2) == rolearray.length){
-			location.href = "guide_check.HTML"
+			location.href = "judge_check.HTML"
 		}
 	});
 });
