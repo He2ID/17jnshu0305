@@ -4,7 +4,7 @@ $(function(){
 	//for off-line test sessionStorage.setItem("playerroleArray",JSON.stringify(roleArray));  
 	var rolearray = JSON.parse( sessionStorage.getItem("playerroleArray")); 
 	if (rolearray === null) {
-		location.href = "https://He2ID.github.io/17jnshu0305/part2/killing_game/preference.HTML"
+		location.href = "preference.HTML"
 	}
 	console.log(rolearray);
 	var clickNum = 0;
@@ -44,7 +44,7 @@ $(function(){
 				$("section>button").text("查看"+ (Math.ceil(clickNum/2)+1) +"号身份");
 		}
 		if((clickNum/2) == rolearray.length){
-			location.href = "https://He2ID.github.io/17jnshu0305/part2/task1/task1_1.HTML"
+			location.href = "guide_check.HTML"
 		}
 	});
 });

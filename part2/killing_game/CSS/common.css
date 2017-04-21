@@ -66,9 +66,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  /* Firefox */
   -webkit-box-sizing: border-box;
-  /* Safari */
   z-index: 3;
   height: 2.5rem;
   padding: 0 10px;
@@ -94,6 +92,29 @@ header > .help {
 }
 @media screen and (min-width: 768px) {
   header {
+    width: 768px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+.fix-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 88;
+  padding: 1.1rem 0.75rem;
+  background: #29bde0;
+}
+@media screen and (min-width: 768px) {
+  .fix-footer {
     width: 768px;
     left: 0;
     right: 0;
