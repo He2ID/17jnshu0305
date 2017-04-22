@@ -94,7 +94,7 @@ function newgame(){
 	if (sessionStorage.getItem("playerroleArray") === null) {
 		alert("请设置【玩家人数】,【玩家配比】");
 	}
-	else if(JSON.parse( sessionStorage.getItem("playerroleArray")).length !== playerNum){
+	else if(JSON.parse( sessionStorage.getItem("playerroleArray")).length != playerNum){
 		alert("【玩家人数】和【玩家配比】人数不一致，请重新设置！");
 	}
 	else{
