@@ -1,5 +1,5 @@
 //玩家人数设置
-var playerNum;
+var playerNum = 6;
 var showNum = document.getElementById('showNum');
 var rangeNum = document.getElementById('rangeNum');
 function changeshow() {
@@ -7,7 +7,7 @@ function changeshow() {
 		playerNum = rangeNum.value = showNum.value;
 		rangeColor();
 	}else if (showNum.value < 3 || showNum.value > 18){
-		alert ("输入【玩家人数】请在【4--18】之间" );
+		alert ("输入【玩家人数】请在【4--18】之间！" );
 	}else if (showNum.value%1 !== 0){
 		alert ("输入【玩家人数】要是整数啦！范围请在【4--18】之间" );
 	}
@@ -91,10 +91,15 @@ function getEnter(){
 
 //去发牌
 function newgame(){
+	var rolearray = JSON.parse( sessionStorage.getItem("playerroleArray"));
 	if (sessionStorage.getItem("playerroleArray") === null) {
 		alert("请设置【玩家人数】,【玩家配比】");
 	}
-	else{
+	else if(rolearray.length !== playerNum){
+		alert("【玩家人数】和【玩家配比】人数不一致，请重新设置！")
+
+	}
+		else{
 		window.location.href = "check_role.HTML";
 	}
 }
