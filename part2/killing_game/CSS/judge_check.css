@@ -24,22 +24,7 @@ section {
   -webkit-box-sizing: border-box;
   width: 100%;
 }
-.judgecheck .voteitem {
-  float: left;
-  width: 33.33%;
-  padding: 1rem 0;
-}
 .judgecheck .voteitem h2 {
-  box-sizing: border-box;
-  border: 0.15rem solid #fff;
-  height: 3.5rem;
-  width: 3.5rem;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  line-height: 2.2rem;
-  text-align: center;
-  color: #000;
-  font-weight: normal;
   background: url(../img/judge-cover.png) no-repeat;
   background-size: 100%;
 }
@@ -52,14 +37,7 @@ section {
 .judgecheck .voteitem h2:hover > span {
   display: block;
 }
-.judgecheck .voteitem h3 {
-  width: 3.2rem;
-  margin: 0 auto;
-  margin-top: -1.15rem;
-  font-size: 0.6rem;
-  line-height: 1rem;
-  text-align: center;
-  color: #fff;
-  font-weight: normal;
-  background: rgba(41, 198, 224, 0.53);
+footer {
+  height: 4.4rem;
+  padding: 1.1rem 0.75rem;
 }
