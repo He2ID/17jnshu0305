@@ -43,9 +43,9 @@ function playerrole(){
 		var roleANum = Math.floor((playerNum/4));
 		for (var i = 0; i < playerNum; i++) {
 			if (i < roleANum) {
-				roleArray[i] = 0;
-			}else{
 				roleArray[i] = 1;
+			}else{
+				roleArray[i] = 2;
 			}
 		}
 		roleArray.sort(function(){ return 0.5 - Math.random(); });
@@ -60,10 +60,10 @@ function addchild(baseArray,fatherDom,addElement){
 	for (var i = 0; i < baseArray.length; i++) {
         var adddiv=document.createElement(addElement);  
         fatherDom.appendChild(adddiv);
-		if(baseArray[i]){ 
+		if(baseArray[i]==2){ 
 	        adddiv.innerHTML= (i + 1) + "号水民";  
 			adddiv.className = 'roleB';
-		}else{
+		}else if(baseArray[i]==1){
 			 adddiv.innerHTML= (i + 1) + "号杀手"; 
 			 adddiv.className = 'roleA';
 		}

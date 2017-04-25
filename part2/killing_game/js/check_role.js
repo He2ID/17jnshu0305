@@ -17,10 +17,11 @@ $(function(){
 		++clickNum;
 		console.log("点击次数" + clickNum);
 		if(clickNum%2==1){
-			if (rolearray[Math.ceil(clickNum/2)]==0) {
+			console.log(rolearray[Math.ceil(clickNum/2)]);
+			if (rolearray[Math.floor((clickNum-1)/2)]==1) {
 				$(".rolecard").append($roleA)
 					.append($hintA);
-			}else{
+			}else if(rolearray[Math.floor((clickNum-1)/2)]==2){
 				$(".rolecard").append($roleB)
 					.append($hintB);
 			}
